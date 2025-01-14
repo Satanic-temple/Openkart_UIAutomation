@@ -1,5 +1,6 @@
 package testrunner;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
 
@@ -15,6 +16,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)
 public class Testrunner {
+@Test
+public void testRunner() {
+
+}
 
 	}
 
