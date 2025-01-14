@@ -93,11 +93,17 @@
 			<artifactId>cucumber-picocontainer</artifactId>
 			<version>7.20.1</version>
 		</dependency>
-		<dependency>
+		<!--dependency>
 			<groupId>CucumberPOMSeries</groupId>
 			<artifactId>CucumberPOMSeries</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency -->
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>my-repo</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
 
 </project>
