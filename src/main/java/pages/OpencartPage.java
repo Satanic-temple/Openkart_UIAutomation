@@ -31,8 +31,8 @@ public class OpencartPage {
 		this.driver = driver;	
 	}
 	
-	public void mouseHover_On_Components_Menu() {
-		Wait.imWait();
+	public void mouseHover_On_Components_Menu() throws InterruptedException {
+		Thread.sleep(5000);
 		WebElement component_Menu_Elelement = driver.findElement(Components_menu);
 		Mousehover.mouseHover(component_Menu_Elelement);
 	}

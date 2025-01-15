@@ -2,20 +2,20 @@ package utilities;
 
 import java.time.Duration;
 
-
-
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 public class Wait {
-	 //static WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(15));
+	private static By Components_menu = By.xpath("//a[@class='nav-link dropdown-toggle' and contains(text(),'Components')]");
+	public static WebDriver driver;
+	static WebDriverWait wt = new WebDriverWait(driver,Duration.ofSeconds(10)); 
+	
 	public static void imWait() {
 		DriverFactory.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
-//    public static void exwait_for_GroupPage() {
-//    	
-//    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='min-w-0 text-truncate']")));
-//    }
-//    public static void exwait_for_IndividualPage() {
-//   	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[normalize-space()='Date of Birth']")));
-//   	////span[@class='min-w-0 text-truncate' and contains(text(),Individuals)]
-//    }
+    public static void exwait_for_HomePage() {
+    WebElement Component_Menu_Element =	wt.until(ExpectedConditions.visibilityOfElementLocated(Components_menu));
+    }
 }

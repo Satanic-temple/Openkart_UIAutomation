@@ -31,7 +31,7 @@ public class OpencartStep {
 		driver.get("https://demo.opencart.com");  
 	}
 	@When("user mouse hover on Components menu")
-	public void user_mouse_hover_on_components_menu() {
+	public void user_mouse_hover_on_components_menu() throws InterruptedException {
 		opencartpage.mouseHover_On_Components_Menu();
 	}
 	@When("user clicks on Show all components hyperlink")
