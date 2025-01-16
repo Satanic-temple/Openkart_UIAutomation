@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 15, 2025 12:32:06 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jan 16, 2025 04:17:15 pm</span></a>
 </li>
 </ul>
 </div>
@@ -52,6 +52,11 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -61,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 15, 2025 12:32:06 pm</h3>
+<h3>Jan 16, 2025 04:17:15 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 15, 2025 12:33:06 pm</h3>
+<h3>Jan 16, 2025 04:20:32 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -95,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -118,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>3</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -138,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>16</b> steps passed</small></div>
+<div><small data-tooltip='57%'><b>11</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='15%'><b>3</b> steps failed,
+<b>5</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -157,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Opencart navigation Feature":59.858
+"Opencart navigation Feature":196.49
 };
 </script>
 <div class="row">
@@ -192,21 +197,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
-failChild: 0,
+passChild: 0,
+failChild: 3,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 16,
-failGrandChild: 0,
+passGrandChild: 11,
+failGrandChild: 3,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 5,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -220,7 +225,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -228,25 +233,25 @@ eventsCount: 5,
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Opencart navigation Feature</p>
             <p class="text-sm">
-              <span>12:32:06 pm</span> / <span>00:00:59:858</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>4:17:16 pm</span> / <span>00:03:16:490</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Opencart navigation Feature</h5>
-<span class='badge badge-success'>01.15.2025 12:32:06 pm</span>
-<span class='badge badge-danger'>01.15.2025 12:33:06 pm</span>
-<span class='badge badge-default'>00:00:59:858</span>
+<h5 class="test-status text-fail">Opencart navigation Feature</h5>
+<span class='badge badge-success'>01.16.2025 4:17:16 pm</span>
+<span class='badge badge-danger'>01.16.2025 4:20:32 pm</span>
+<span class='badge badge-default'>00:03:16:490</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -259,10 +264,13 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify that No of Component count is correct in Components page</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Verify that No of Component count is correct in Components page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_navigates_to_opencart_website()">
                 <span>Given User navigates to opencart website</span>
@@ -274,18 +282,61 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_clicks_on_show_all_components_hyperlink()">
+              <div class="step fail-bg" title="stepdefinitions.OpencartStep.user_clicks_on_show_all_components_hyperlink()">
                 <span>And user clicks on Show all components hyperlink</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='see-all' and contains(text(),'Show All Components')]"}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4777434551599ca51ad6059b94e018f5, findElement {using=xpath, value=//a[@class='see-all' and contains(text(),'Show All Components')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\skghadei\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49770}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49770/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4777434551599ca51ad6059b94e018f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at pages.OpencartPage.Click_on_ShowAllComponents(OpencartPage.java:41)
+	at stepdefinitions.OpencartStep.user_clicks_on_show_all_components_hyperlink(OpencartStep.java:39)
+	at ✽.user clicks on Show all components hyperlink(file:///C:/Users/skghadei/eclipse-workspace/VonsUIAutomation/src/test/resources/features/01_Opencart.feature:7)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_should_be_navigated_to_components_list_page()">
+              <div class="step skip-bg" title="stepdefinitions.OpencartStep.user_should_be_navigated_to_components_list_page()">
                 <span>Then User should be navigated to Components list page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.number_of_components_present_on_screen_should_be(int)">
+              <div class="step skip-bg" title="stepdefinitions.OpencartStep.number_of_components_present_on_screen_should_be(int)">
                 <span>And Number of components present on screen should be 5</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify_that_No_of_Component_count_is_correct_in_Components_page
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+  
+    
+
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -295,10 +346,13 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Verify that user successfully navigated to Monitors page</div>
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Verify that user successfully navigated to Monitors page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_navigates_to_opencart_website()">
                 <span>Given User navigates to opencart website</span>
@@ -315,13 +369,56 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_clicks_on_Monitors_hyperlink()">
+              <div class="step fail-bg" title="stepdefinitions.OpencartStep.user_clicks_on_Monitors_hyperlink()">
                 <span>And user clicks on Monitors hyperlink</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='col-sm-3']/ul/li//a[text()='Monitors (2)']"}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [668befb87eaa98f3ce5a406431da1810, findElement {using=xpath, value=//div[@class='col-sm-3']/ul/li//a[text()='Monitors (2)']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\skghadei\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49860}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49860/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 668befb87eaa98f3ce5a406431da1810
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at pages.OpencartPage.Click_on_Monitor_hyperlink(OpencartPage.java:55)
+	at stepdefinitions.OpencartStep.user_clicks_on_Monitors_hyperlink(OpencartStep.java:52)
+	at ✽.user clicks on Monitors hyperlink(file:///C:/Users/skghadei/eclipse-workspace/VonsUIAutomation/src/test/resources/features/01_Opencart.feature:14)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_should_be_navigated_to_Monitors_list_view_page()">
+              <div class="step skip-bg" title="stepdefinitions.OpencartStep.user_should_be_navigated_to_Monitors_list_view_page()">
                 <span>Then user should be navigated to Monitors list view page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify_that_user_successfully_navigated_to_Monitors_page
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+  
+    
+
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -331,10 +428,13 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Verify the Breadcrums are correct & correct no of tiles present</div>
+        <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>Verify the Breadcrums are correct & correct no of tiles present</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_navigates_to_opencart_website()">
                 <span>Given User navigates to opencart website</span>
@@ -351,18 +451,61 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.user_clicks_on_Monitors_hyperlink()">
+              <div class="step fail-bg" title="stepdefinitions.OpencartStep.user_clicks_on_Monitors_hyperlink()">
                 <span>And user clicks on Monitors hyperlink</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='col-sm-3']/ul/li//a[text()='Monitors (2)']"}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a04641aad5c2046b0702f3fab0f08688, findElement {using=xpath, value=//div[@class='col-sm-3']/ul/li//a[text()='Monitors (2)']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\skghadei\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a04641aad5c2046b0702f3fab0f08688
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at pages.OpencartPage.Click_on_Monitor_hyperlink(OpencartPage.java:55)
+	at stepdefinitions.OpencartStep.user_clicks_on_Monitors_hyperlink(OpencartStep.java:52)
+	at ✽.user clicks on Monitors hyperlink(file:///C:/Users/skghadei/eclipse-workspace/VonsUIAutomation/src/test/resources/features/01_Opencart.feature:20)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.The_breadcrums_should_be_shown_correctly()">
+              <div class="step skip-bg" title="stepdefinitions.OpencartStep.The_breadcrums_should_be_shown_correctly()">
                 <span>Then The breadcrums should be shown correctly</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.OpencartStep.The_No_of_tiles_present_on_screen_should_be(int)">
+              <div class="step skip-bg" title="stepdefinitions.OpencartStep.The_No_of_tiles_present_on_screen_should_be(int)">
                 <span>And The No of tiles present on screen should be 2</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify_the_Breadcrums_are_correct_&_correct_no_of_tiles_present
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
+  
+    
+
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -381,7 +524,79 @@ eventsCount: 5,
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-        </div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:18:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>And user clicks on Show all components hyperlink</a>
+<div class="">
+<span class="badge badge-default">Opencart navigation Feature.Verify that No of Component count is correct in Components page.And user clicks on Show all components hyperlink</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:19:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>And user clicks on Monitors hyperlink</a>
+<div class="">
+<span class="badge badge-default">Opencart navigation Feature.Verify that user successfully navigated to Monitors page.And user clicks on Monitors hyperlink</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:20:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>And user clicks on Monitors hyperlink</a>
+<div class="">
+<span class="badge badge-default">Opencart navigation Feature.Verify the Breadcrums are correct & correct no of tiles present.And user clicks on Monitors hyperlink</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
       </div>
     </div>
   </div>
